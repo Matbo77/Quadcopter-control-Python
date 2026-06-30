@@ -13,6 +13,16 @@ This project aims to develop a simple simulation model of a quadcopter UAV with 
 - Feedback linearization
 - Sliding Mode Control (SMC)
 
+## System dynamic
+
+The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second law of Newton and Euler’s rotation equations), including nonlinear couplings, gyroscopic moments, and cross-inertia effects. 
+
+
+
+## Control loop scheme
+
+<img alt="Control" src="pictures/quadcopter_control_loop.png" width="70%" height="70%"> </img>
+
 
 ## 📈 Visualize Results
 
@@ -38,4 +48,4 @@ Future improvements could include:
 - Monte Carlo simulation
 ---
 
-<!-- ## 📚 References -->
+<!-- ## 📚 References  - ["Model Based Control of Quadcopters", Spring Semester 2015-2016, MT Master Project EPFL, Martí POMÉS ARNAU](https://upcommons.upc.edu/server/api/core/bitstreams/b03e2a1f-d047-45d4-8b43-941f029e6729/content)   -->
