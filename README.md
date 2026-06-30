@@ -16,8 +16,8 @@ This project aims to develop a simple simulation model of a quadcopter UAV with 
 
 ## 📈 Visualize Results
 
-<img alt="Traj heli" src="pictures/quadcopter_trajectory_helicoidale" width="60%" height="60%"> </img>
-<img alt="Traj_zoom" src="pictures/traj_estimate_meas_UKF_zoom.png" width="60%" height="60%"> </img>
+<img alt="Traj heli" src="pictures/quadcopter_trajectory_helicoidale_SMC" width="60%" height="60%"> </img>
+<img alt="Traj lemniscate" src="pictures/Lemniscate_traj_SMC.png" width="60%" height="60%"> </img>
 <img alt="Estimate" src="pictures/estimate_UKF.png" width="60%" height="60%"> </img>
 <img alt="Traj_MHE" src="pictures/traj_estimate_meas_MHE_zoom.png" width="60%" height="60%"> </img>
 
