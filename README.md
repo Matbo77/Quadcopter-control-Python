@@ -39,7 +39,9 @@ The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second l
 <!--  <img alt="Traj lemniscate" src="pictures/Lemniscate_traj_SMC.png" width="60%" height="60%"> </img>-->
 
 
+## How to use it
 
+1. Run the main script `quadcopter_main.py` on your favorite Python interpreter.
 
 ## 🤝 Contributing
 
