@@ -15,17 +15,15 @@ This project aims to develop a simple simulation model of a quadcopter UAV with 
 
 The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second law of Newton and Euler’s rotation equations), including nonlinear couplings, gyroscopic moments, and cross-inertia effects. 
 
-$$
-\begin{bmatrix}
- \ddot{x} \\ 
- \ddot{y} \\   
- \ddot{z}
-\end{bmatrix} = \frac{1}{D(\theta)} \begin{bmatrix}
- lF(t) - l\psi\dot{x} - ml^2\dot{\theta}^2\sin(\theta) - mgl\sin(\theta)\cos(\theta) -\phi\dot{\theta}\cos(\theta)  \\  
- -(M + m)g\sin(\theta) - \frac{M + m}{ml}\phi\dot{\theta} + \cos(\theta)F(t) - \psi\dot{x}\cos(\theta) - ml\dot{\theta}^2\sin(\theta)\cos(\theta)  \\ 
- 0
-\end{bmatrix} 
-$$
+\begin{equation}
+    \left \{ \begin{array}{lll}
+    \bmat{c} \ddot{x} \\ \ddot{y} \\ \ddot{z} \emat &=& \bmat{c} 0 \\ 0 \\ -g \emat + \frac{1}{m}R^{-1}(\phi,\theta,\psi)\bmat{c} 0 \\ 0 \\ u_1 \emat  - \frac{1}{m}k_D \bmat{c} \dot{x} \\ \dot{y} \\ \dot{z} \emat  \\
+      \bmat{c} \dot{\omega}_x \\ \dot{\omega}_y \\ \dot{\omega}_z \emat &=&    \bmat{c} \frac{1}{I_{xx}} u_2 \\ \frac{1}{I_{yy}} u_3 \\  \frac{1}{I_{zz}} u_4 \emat -  \bmat{c} \frac{I_{yy}-I_{zz}}{I_{xx}} \omega_y\omega_z \\ \frac{I_{zz}-I_{xx}}{I_{yy}} \omega_x\omega_z \\ \frac{I_{xx}-I_{yy}}{I_{zz}} \omega_x\omega_y \emat \\
+      \bmat{c}  \dot{\phi} \\ \dot{\theta} \\ \dot{\psi} \emat  &=& J(\phi,\theta)
+    \bmat{c} \omega_x \\ \omega_y \\ \omega_z \emat %= J \omega_B
+    \end{array} \right.
+    \label{eq:full_dynamic_system}
+\end{equation}
 
 ## Control loop scheme
 
