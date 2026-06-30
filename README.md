@@ -27,9 +27,10 @@ The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second l
 ## 📈 Visualize Results
 
 
-- Tracking helicoidal trajectory using SMC
+- Tracking helicoidal trajectory using SMC:
 <img alt="Traj heli" src="pictures/quadcopter_trajectory_helicoidale_SMC.gif" width="60%" height="60%"> </img>
-- Tracking Bernoulli lemniscate type trajectory using SMC
+
+- Tracking Bernoulli lemniscate type trajectory using SMC:
 <img alt="Traj lemniscate" src="pictures/quadcopter_trajectory_lemniscate_SMC.gif" width="60%" height="60%"> </img>
 
 
