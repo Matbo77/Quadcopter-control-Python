@@ -54,4 +54,5 @@ Future improvements could include:
 - Monte Carlo simulation
 ---
 
-<!-- ## 📚 References  - ["Model Based Control of Quadcopters", Spring Semester 2015-2016, MT Master Project EPFL, Martí POMÉS ARNAU](https://upcommons.upc.edu/server/api/core/bitstreams/b03e2a1f-d047-45d4-8b43-941f029e6729/content)   -->
+## 📚 References  
+- ["Model Based Control of Quadcopters", Spring Semester 2015-2016, MT Master Project EPFL, Martí POMÉS ARNAU](https://upcommons.upc.edu/server/api/core/bitstreams/b03e2a1f-d047-45d4-8b43-941f029e6729/content)  
