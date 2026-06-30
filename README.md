@@ -44,7 +44,9 @@ $$
 $$
 
 ## Control loop scheme
+To simplify we can consider command in torque that will be converted into a command in rotation speed of each motor:
 
+$u = [u_1,u_2,u_3,u_4]^\top = [T_B,\tau_{\phi},\tau_{\theta},\tau_{\psi}]^\top,$
 <img alt="Control" src="pictures/quadcopter_control_loop.png" width="70%" height="70%"> </img>
 
 ### 📊 Controllers Implemented:
