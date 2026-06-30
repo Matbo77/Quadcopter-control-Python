@@ -49,6 +49,7 @@ Contributions are welcome!
 
 Future improvements could include:
 - MPC implementation
+- Better controller tuning
 - More detailled Readme
 - Monte Carlo simulation
 ---
