@@ -16,9 +16,10 @@ This project aims to develop a simple simulation model of a quadcopter UAV with 
 
 ## 📈 Visualize Results
 
-# Trajectory helicoidal for tracking using SMC
+<img alt="Traj heli" src="pictures/quadcopter_trajectory.gif" width="60%" height="60%"> </img>
+- Trajectory helicoidal for tracking using SMC
 <img alt="Traj heli" src="pictures/quadcopter_trajectory_helicoidale_SMC.gif" width="60%" height="60%"> </img>
-# Trajectory lemniscate Bernoulli type for tracking using SMC
+- Trajectory lemniscate Bernoulli type for tracking using SMC
 <img alt="Traj lemniscate" src="pictures/Lemniscate_traj_SMC.png" width="60%" height="60%"> </img>
 
 
