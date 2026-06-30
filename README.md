@@ -11,11 +11,37 @@ Simulation and control of a quadcopter UAV, visualization of its trajectory and 
 This project aims to develop a simple simulation model of a quadcopter UAV with its graphic visualization in Python. Moreover, it implements different controllers for tracking several types of 3D reference trajectories. It also includes visualization of the flight data, and controller performances. 
 
 
+$$
+\left\{
+\begin{array}{lll}
+\begin{bmatrix} \ddot{x} \\ \ddot{y} \\ \ddot{z} \end{bmatrix}
+&=
+\begin{bmatrix} 0 \\ 0 \\ -g \end{bmatrix}
++ \frac{1}{m}R^{-1}(\phi,\theta,\psi)
+\begin{bmatrix} 0 \\ 0 \\ u_1 \end{bmatrix}
+- \frac{1}{m}k_D
+\begin{bmatrix} \dot{x} \\ \dot{y} \\ \dot{z} \end{bmatrix}
+\\
+\begin{bmatrix} \dot{\omega}_x \\ \dot{\omega}_y \\ \dot{\omega}_z \end{bmatrix}
+&=
+\begin{bmatrix} \frac{1}{I_{xx}} u_2 \\ \frac{1}{I_{yy}} u_3 \\ \frac{1}{I_{zz}} u_4 \end{bmatrix}
+-
+\begin{bmatrix} \frac{I_{yy}-I_{zz}}{I_{xx}} \omega_y\omega_z \\ \frac{I_{zz}-I_{xx}}{I_{yy}} \omega_x\omega_z \\ \frac{I_{xx}-I_{yy}}{I_{zz}} \omega_x\omega_y \end{bmatrix}
+\\
+\begin{bmatrix} \dot{\phi} \\ \dot{\theta} \\ \dot{\psi} \end{bmatrix}
+&=
+J(\phi,\theta)
+\begin{bmatrix} \omega_x \\ \omega_y \\ \omega_z \end{bmatrix}
+\end{array}
+\right.
+$$
+
+
 ## System dynamic description
 
 The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second law of Newton and Euler’s rotation equations), including nonlinear couplings, gyroscopic moments, and cross-inertia effects. 
 
-
+$$
  \begin{array}{lll}
     \begin{bmatrix} \ddot{x} \\ 
     \ddot{y} \\ 
@@ -24,7 +50,7 @@ The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second l
       \begin{bmatrix}  \dot{\phi} \\ \dot{\theta} \\ \dot{\psi} \end{bmatrix}  &=& J(\phi,\theta)
     \begin{bmatrix} \omega_x \\ \omega_y \\ \omega_z \end{bmatrix}
     \end{array} 
-
+$$
 
 ## Control loop scheme
 
