@@ -12,7 +12,7 @@ This project aims to develop a simple simulation model of a quadcopter UAV with 
 
 
 
-## System dynamic description
+## 🔧 System dynamic description
 
 The quadrotor is modeled using the full 6-DOF Newton–Euler equations (second law of Newton and Euler’s rotation equations), including nonlinear couplings, gyroscopic moments, drag forces, and cross-inertia effects. 
 
