@@ -81,8 +81,8 @@ Contributions are welcome!
 Future improvements could include:
 - NMPC implementation
 - Better controller tuning
-- More detailled Readme
 - Robustness assessment
+- More detailled Readme
   <!-- Monte Carlo simulation -->
 ---
 
