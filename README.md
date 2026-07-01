@@ -52,7 +52,7 @@ To simplify we can consider command in torque that will be converted into a comm
 
 ### 📊 Controllers Implemented:
 - Feedback linearization
-- Sliding Mode Control (SMC)
+- Sliding Mode Control (SMC) with saturation
 
 ## 📈 Visualize Results
 
