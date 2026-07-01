@@ -43,8 +43,7 @@ $$
     \end{array} 
 $$
 
-with $u = [u_1,u_2,u_3,u_4]^\top = [T_B,\tau_{\phi},\tau_{\theta},\tau_{\psi}]^\top$ the torque input, $(\phi,\theta,\psi)$ the Euler attitudes (roll,pitch,yaw), $(\omega_x,\omega_y,\omega_z)$ the angular velocities in the body frame, $R(\phi,\theta,\psi)$ the rotation matrix from from the inertial world frame to the body frame, $m$ the quadcopter mass, $k_D$ the drag coefficient, $I_{xx},I_{yy},I_{zz}$ the inertia matrix diagonal coefficients, $J(\phi,\theta)$ the angular velocity
-transformation matrix which convert attitude and angular speed of the quadcopter from body frame to inertial frame
+with $u = [u_1,u_2,u_3,u_4]^\top = [T_B,\tau_{\phi},\tau_{\theta},\tau_{\psi}]^\top$ the torque input, $(\phi,\theta,\psi)$ the Euler attitudes (roll,pitch,yaw), $(\omega_x,\omega_y,\omega_z)$ the angular velocities in the body frame, $R(\phi,\theta,\psi)$ the rotation matrix from from the inertial world frame to the body frame, $m$ the quadcopter mass, $k_D$ the drag coefficient, $I_{xx},I_{yy},I_{zz}$ the inertia matrix diagonal coefficients, $J(\phi,\theta)$ the angular velocity transformation matrix which convert attitude and angular speed of the quadcopter from body frame to inertial frame.
 
 ## Control loop scheme
 To simplify we can consider command in torque that will be converted into a command in rotation speed of each motor:
