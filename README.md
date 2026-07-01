@@ -79,7 +79,7 @@ To simplify we can consider command in torque that will be converted into a comm
 Contributions are welcome!
 
 Future improvements could include:
-- MPC implementation
+- NMPC implementation
 - Better controller tuning
 - More detailled Readme
 - Monte Carlo simulation
