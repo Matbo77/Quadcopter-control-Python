@@ -82,7 +82,8 @@ Future improvements could include:
 - NMPC implementation
 - Better controller tuning
 - More detailled Readme
-- Monte Carlo simulation
+- Robustness assessment
+  <!-- Monte Carlo simulation -->
 ---
 
 ## 📚 References  
