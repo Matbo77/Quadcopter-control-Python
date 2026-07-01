@@ -1,6 +1,6 @@
 # Quadcopter-control-Python
 
-Simulation and control of a quadcopter UAV, visualization of its trajectory and tracking performance in Python.
+Simulation and control of a small quadcopter UAV, visualization of its trajectory and tracking performance in Python.
 
 <a href= "https://img.shields.io/badge/github-repo-blue?logo=github"> <img src="https://img.shields.io/badge/github-repo-blue?logo=github" alt="GitHub Badge"/></a>
  ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
